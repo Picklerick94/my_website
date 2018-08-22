@@ -8,16 +8,64 @@ title: Jasmine
   <div class="about-container fade-in first">
     <div class="main-img"></div>
     <div class="main-content">
-      <h1>I’m Meeseeks, a Digital Product Designer & Art Director based in Berlin.</h1>
+      <h1>I’m Jasmine, a developer based in Shanghai.</h1>
       <div class="line-break"></div>
       <p>My goal is to help people build better and more meaningful products. With a strong background in UX & UI design, I make use of iterative hands-on processes and follow a human-centric design approach. My work ranges from strategic planning and rough prototyping in the early stages, to creating a strong visual design language, all of which increases the value of both the brand and the product.</p>
     </div>
   </div>
+  <!-- what I do -->
   <div id="work-container">
-    <div id="work-header" class="about-container">
-      <h2>What I Do</h2>
+    <div class="hideme">
+      <img src="http://uploads.webflow.com/58ff19c91dfbf33afe47b6d9/59761460d9e5f43edc850734_plantv2%402x.png" alt="" style="height: 26em; position: absolute; left: 0; z-index: 5;">
+      <div class="work-content-container">
+        <h2>What I Do</h2>
+        <div class="line-break-content"></div>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Frontend Development</h3>
+            <p>JavaScript ES6, Vue, HTML5, CSS3</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Backend Development</h3>
+            <p>Ruby on Rails, SQL Databases</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-weixin"></i>
+            <h3>WeChat Mini Program</h3>
+          </div>
+        </div>
+        <p style="text-align: center;">For full CV, please refer to LinkdeIn</p>
+      </div>
     </div>
-    <div class="hideme">Fade In</div>
-    <div class="hideme">Fade In</div>
+    <!-- what I create -->
+    <div class="hideme">
+      <img src="http://uploads.webflow.com/58ff19c91dfbf33afe47b6d9/59761460d9e5f43edc850734_plantv2%402x.png" alt="" style="height: 26em; position: absolute; right: 0; transform: rotateX(0) rotateY(180deg) rotateZ(0); z-index: 5;">
+      <div class="project-content-container">
+        <h2>What I Create</h2>
+        <div class="line-break-content"></div>
+        <div class="cards">
+          <% link_to 'https://misscocktails.herokuapp.com/' do %>
+            <div class="card-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=08cb0ebaadb99995755a696a9710b229&auto=format&fit=crop&w=500&q=60');">
+              <h4>Miss Cocktail</h4>
+            </div>
+          <% end %>
+          <% link_to 'https://www.jie-fang.club/' do %>
+            <div class="card-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1500281781950-6cd80847ebcd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac62bee1f3ea11911025de39a9398741&auto=format&fit=crop&w=500&q=60');">
+              <h4>街坊</h4>
+            </div>
+          <% end %>
+          <div class="card-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1513738781020-f0109e72554f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc01cf9a021520910574e59d8d689767&auto=format&fit=crop&w=500&q=60');">
+            <h4>Dog Sitter</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hideme">
+    <div>
+      <h2>Contact Me</h2>
+    </div>
   </div>
 </div>
