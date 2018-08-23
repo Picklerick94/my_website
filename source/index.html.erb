@@ -1,8 +1,16 @@
 ---
 title: Jasmine
 ---
-<div class="header" style="opacity: 1; transition: opacity 800ms ease-in 0s, height 200ms ease 0s;"></div>
-<div class="side-bar-left" style="opacity: 1; transition: opacity 800ms ease-in 0s, width 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; width: 55px;"></div>
+<div class="header" style="opacity: 1; transition: opacity 800ms ease-in 0s, height 200ms ease 0s;">
+</div>
+<div class="side-bar-left" style="opacity: 1; transition: opacity 800ms ease-in 0s, width 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; width: 55px;">
+  <% link_to 'www.linkedin.com/in/jasminetangting' do %>
+    <i class="fab fa-linkedin"></i>
+  <% end %>
+  <% link_to 'https://github.com/Picklerick94' do %>
+    <i class="fab fa-github-square"></i>
+  <% end %>
+</div>
 <div class="bottom-bar" style="opacity: 1; transition: opacity 800ms ease-in 0s, height 200ms ease 0s;"></div>
 <div class="main-fluid" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 1000ms ease 0s, transform 700ms ease-out 0s;">
   <div class="about-container fade-in first">
@@ -10,7 +18,7 @@ title: Jasmine
     <div class="main-content">
       <h1>I’m Jasmine, a developer based in Shanghai.</h1>
       <div class="line-break"></div>
-      <p>My goal is to help people build better and more meaningful products. With a strong background in UX & UI design, I make use of iterative hands-on processes and follow a human-centric design approach. My work ranges from strategic planning and rough prototyping in the early stages, to creating a strong visual design language, all of which increases the value of both the brand and the product.</p>
+      <p>With a background in international financial law and worked in a Silicon Valley law firm, I got interested in the logic behind all the code and started a track of web development. My work ranges from rails web application to WeChat Mini Program. I'm also a diving fan and love García Márquez's books.</p>
     </div>
   </div>
   <!-- what I do -->
@@ -36,7 +44,7 @@ title: Jasmine
             <h3>WeChat Mini Program</h3>
           </div>
         </div>
-        <p style="text-align: center;">For full CV, please refer to LinkdeIn</p>
+        <p style="text-align: center;">For full CV, please refer to <a href="www.linkedin.com/in/jasminetangting">LinkedIn</a></p>
       </div>
     </div>
     <!-- what I create -->
@@ -62,10 +70,15 @@ title: Jasmine
         </div>
       </div>
     </div>
-  </div>
-  <div class="hideme">
-    <div>
-      <h2>Contact Me</h2>
+    <div class="hideme">
+      <div class="flex-form">
+        <h2 style="text-align: center;">Contact Me</h2>
+        <form method="POST" action="https://formspree.io/jastangting@gmail.com" class="contact-form">
+          <input type="email" name="email" placeholder="Your email">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn-1">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
