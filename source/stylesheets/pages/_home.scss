@@ -30,8 +30,9 @@ body {
 }
 .main-fluid {
   background-color: #f8f8f8;
-  margin-right: 55px;
+  margin-right: 49px;
 }
+
 .about-container {
   display: flex;
   flex-direction: row;
@@ -126,8 +127,8 @@ body {
 }
 /*scroll appear*/
 #work-container {
-  margin-left: 40px;
-  padding-left: 16px;
+  // margin-left: 40px;
+  // padding-left: 16px;
   margin-top: 110px;
   // max-height: 1100px;
 }
@@ -139,18 +140,18 @@ body {
   position: relative;
   justify-content: center;
   margin-top: 50px;
-  height: 33em;
-}
-.work-fluid {
-  display: flex;
-  position: relative;
 }
 .work-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5em;
   h2 {
     text-align: center;
   }
 }
-// media 1299
+
 /*card*/
 .cards {
   display: flex;
@@ -184,6 +185,11 @@ body {
 }
 // projects
 .project-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5em;
   h2 {
     text-align: center;
   }
@@ -208,17 +214,19 @@ body {
   }
 }
 .line-break-content {
-  margin-left: 26em;
   width: 90px;
   height: 5px;
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+.flex-form {
+  margin-bottom: 57px;
+  padding-top: 5em;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 44px;
-
   textarea {
     margin-bottom: 26px;
     border: none;
@@ -295,4 +303,58 @@ body {
     100% {
         opacity: 0;
     }
+}
+/*sm screen*/
+@media (max-device-width: 736px) {
+  .main-fluid {
+    background-color: #f8f8f8;
+    margin-right: 0px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 0px;
+  }
+  .main-img {
+    width: 20em;
+    height: 15em;
+  }
+  .main-content {
+    text-align: center;
+    width: 18em;
+
+    h1 {
+      margin-left: 0px;
+      font-size: 34px;
+    }
+    p {
+      padding-left: 0px;
+      font-size: 19px;
+      font-weight: lighter;
+    }
+  }
+  .line-break {
+    width: 16em;
+    margin-left: 1em;
+  }
+  .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .contact-form {
+    textarea {
+      width: 16em;
+    }
+    input {
+      width: 16em;
+    }
+  }
+  img {
+    height: 20em;
+  }
 }
