@@ -14,3 +14,4 @@ gem 'jquery-middleman'
 
 # SEO
 gem 'meta-tags'
+gem 'middleman-search_engine_sitemap'

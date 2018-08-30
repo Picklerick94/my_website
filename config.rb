@@ -20,3 +20,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+set :url_root, 'https://www.jasminecodes.com/'
+
+activate :search_engine_sitemap
