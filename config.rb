@@ -21,6 +21,8 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
+page "/sitemap.xml", :layout => false
+
 set :url_root, 'https://www.jasminecodes.com/'
 
 activate :search_engine_sitemap
