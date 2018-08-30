@@ -11,3 +11,6 @@ gem 'font-awesome-middleman'
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
+
+# SEO
+gem 'meta-tags'
